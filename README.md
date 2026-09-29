@@ -6,14 +6,14 @@ Built with Python, OpenCV, MediaPipe and PyAutoGUI by Aman Prajapati.
 
 ## Supported apps
 
-| App | What it controls |
-| --- | --- |
-| Google Slides | Slides |
-| PowerPoint | Slides |
-| LibreOffice Impress | Slides |
-| YouTube (in a browser) | Play / pause, seek, volume, mute |
-| VLC media player | Play / pause, seek, volume, mute |
-| Other slides or PDF viewers | Slides (generic keys) |
+| App                         | What it controls                 |
+| --------------------------- | -------------------------------- |
+| Google Slides               | Slides                           |
+| PowerPoint                  | Slides                           |
+| LibreOffice Impress         | Slides                           |
+| YouTube (in a browser)      | Play / pause, seek, volume, mute |
+| VLC media player            | Play / pause, seek, volume, mute |
+| Other slides or PDF viewers | Slides (generic keys)            |
 
 On Windows the program reads the title of the window in front and switches to the right app by itself. On Mac and Linux, press `m` in the camera window until the correct app name appears.
 
@@ -23,26 +23,26 @@ Fingers are counted as index, middle, ring and pinky. The thumb is ignored.
 
 ### Slides
 
-| Gesture | Action |
-| --- | --- |
-| Open palm | Next slide |
-| 3 fingers (index, middle, ring) | Previous slide |
-| 2 fingers (index, middle) | Start slideshow |
-| Fist | Exit slideshow |
+| Gesture                         | Action          |
+| ------------------------------- | --------------- |
+| Open palm                       | Next slide      |
+| 3 fingers (index, middle, ring) | Previous slide  |
+| 2 fingers (index, middle)       | Start slideshow |
+| Fist                            | Exit slideshow  |
 
 Start slideshow uses `Ctrl+F5` in Google Slides, `F5` in PowerPoint and Impress, and the Mac equivalents on Mac.
 
 ### YouTube and VLC
 
-| Gesture | Action |
-| --- | --- |
-| Open palm | Play / pause |
-| 3 fingers | Forward 10 seconds |
-| 2 fingers | Back 10 seconds |
-| 1 finger (index only) | Volume up |
-| Pinky only | Volume down |
-| Rock sign (index + pinky) | Fullscreen |
-| Fist | Mute / unmute |
+| Gesture                   | Action             |
+| ------------------------- | ------------------ |
+| Open palm                 | Play / pause       |
+| 3 fingers                 | Forward 10 seconds |
+| 2 fingers                 | Back 10 seconds    |
+| 1 finger (index only)     | Volume up          |
+| Pinky only                | Volume down        |
+| Rock sign (index + pinky) | Fullscreen         |
+| Fist                      | Mute / unmute      |
 
 Slides wait about 1.5 seconds between actions. Video modes wait about 0.6 seconds.
 
@@ -57,8 +57,8 @@ You need Python 3.9 or newer and a webcam.
 1. Get the project:
 
    ```bash
-   git clone <your-repository-url>
-   cd <project-folder>
+   git clone <https://github.com/amanprajapati5/Gesture-Controller>
+   cd <Gesture Controller>
    ```
 
 2. Install the libraries (use `python3` on Mac or Linux):
@@ -101,15 +101,15 @@ Open System Settings, go to Privacy & Security, and allow Accessibility and Inpu
 
 ## Troubleshooting
 
-| Problem | Try this |
-| --- | --- |
-| "Model not found" | Run `python setup_models.py`. |
-| Black camera window | Close other apps that use the camera. |
-| Hand not detected | Palm to the camera, fingers up, about an arm's length away, good light. |
-| Pattern is right but nothing happens | Click your app window so it has focus. |
-| Wrong app shown | Press `m` to change it. |
-| YouTube keys do nothing | Click the video, not the search box. |
-| VLC seek or volume does nothing | Check the hotkeys in VLC under Tools, Preferences, Hotkeys. |
+| Problem                              | Try this                                                                |
+| ------------------------------------ | ----------------------------------------------------------------------- |
+| "Model not found"                    | Run `python setup_models.py`.                                           |
+| Black camera window                  | Close other apps that use the camera.                                   |
+| Hand not detected                    | Palm to the camera, fingers up, about an arm's length away, good light. |
+| Pattern is right but nothing happens | Click your app window so it has focus.                                  |
+| Wrong app shown                      | Press `m` to change it.                                                 |
+| YouTube keys do nothing              | Click the video, not the search box.                                    |
+| VLC seek or volume does nothing      | Check the hotkeys in VLC under Tools, Preferences, Hotkeys.             |
 
 ## Changing the code
 
